@@ -1,5 +1,7 @@
 # v-interact
 
+<img width="641" height="377" alt="{2E34A92F-7C93-45C4-96A7-C202182339FD}" src="https://github.com/user-attachments/assets/56457592-e4cb-4247-8928-c2646fd69b70" />
+
 World-space proximity interaction points for FiveM: a small ambient dot that
 resolves into a keycap-style `[E] Label` prompt as the player gets close and
 looks at it, with mouse-wheel cycling between multiple options on the same
