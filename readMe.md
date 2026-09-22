@@ -8,8 +8,7 @@ player can scroll the mouse wheel to switch between them. Everything is
 drawn natively (`DrawSprite`/`SetDrawOrigin`)
 
 It also includes `vehicle_doors.lua`, which automatically adds a point on
-all the doors, hoods, and trunk of any nearby vehicle. These points
-update live, so they follow the vehicle as it moves.
+all the doors, hoods, and trunk of any nearby vehicle.
 
 ## Installation
 
