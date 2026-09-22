@@ -12,7 +12,7 @@ drawn natively (`DrawSprite`/`SetDrawOrigin`)
 It also includes `vehicle_doors.lua`, which automatically adds a point on
 all the doors, hoods, and trunk of any nearby vehicle.
 
-https://r2.fivemanage.com/zl1azbSOnYlIdUyfImSJ8/MedalTVGrandTheftAutoVFiveM20260921175116951-trim-1790038701464.mp4
+[https://r2.fivemanage.com/zl1azbSOnYlIdUyfImSJ8/MedalTVGrandTheftAutoVFiveM20260921175116951-trim-1790038701464.mp4](https://r2.fivemanage.com/zl1azbSOnYlIdUyfImSJ8/MedalTVGrandTheftAutoVFiveM20260921175116951-trim-1790038701464.mp4)
 
 ## Installation
 
