@@ -16,6 +16,8 @@ all the doors, hoods, and trunk of any nearby vehicle.
 
 https://r2.fivemanage.com/zl1azbSOnYlIdUyfImSJ8/MedalTVGrandTheftAutoVFiveM20260921175116951-trim-1790038701464.mp4
 
+[![Watch the demo video](https://github.com/user-attachments/assets/9c9c2d0a-8b1c-4734-8fde-0d7a81046d2d)](https://r2.fivemanage.com/zl1azbSOnYlIdUyfImSJ8/MedalTVGrandTheftAutoVFiveM20260921175116951-trim-1790038701464.mp4)
+*(click the image above to watch a demo video)*
 
 [![Watch the demo video]([demo-thumbnail.jpg](https://github.com/user-attachments/assets/c1423f24-8bde-4915-a2ee-03b530f1b1d6))](https://r2.fivemanage.com/zl1azbSOnYlIdUyfImSJ8/MedalTVGrandTheftAutoVFiveM20260921175116951-trim-1790038701464.mp4)
 *(click the image above to watch a demo video)*
