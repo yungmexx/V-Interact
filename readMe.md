@@ -157,5 +157,3 @@ Set `Config.ShowVehicleDoorDots = false` if you don't want the ambient dot
 shown from far away. With this off, the points stay invisible until the
 player is close enough to actually see the prompt.
 ```
-
-Want me to publish this as an artifact so it's easier to copy, or is pasting it back into Untitled-1 fine?
