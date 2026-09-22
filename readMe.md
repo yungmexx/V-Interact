@@ -18,6 +18,10 @@ https://r2.fivemanage.com/zl1azbSOnYlIdUyfImSJ8/MedalTVGrandTheftAutoVFiveM20260
 
 <img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/c1423f24-8bde-4915-a2ee-03b530f1b1d6" />
 
+[![Watch the demo video](demo-thumbnail.jpg)](https://r2.fivemanage.com/zl1azbSOnYlIdUyfImSJ8/MedalTVGrandTheftAutoVFiveM20260921175116951-trim-1790038701464.mp4)
+*(click the image above to watch a demo video)*
+
+
 ## Installation
 
 1. Put the resource in your server's resources folder.
