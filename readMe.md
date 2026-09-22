@@ -22,22 +22,22 @@ update live, so they follow the vehicle as it moves.
 
 ### `AddPoint(coords, options, data) -> pointId`
 
-Creates a new interaction point and gives back its id.
+This creates a new interaction point.
 
 - `coords` - `vector3`, world position of the point.
 - `options` - array of option tables, each:
   - `label` - `string` or `function(point) -> string` (required)
   - `onSelect` - `function(point)` - runs when the player picks this option
-  - `event` - `string` - fires `TriggerEvent(event, point)`
-  - `serverEvent` - `string` - fires `TriggerServerEvent(serverEvent, point.id)`
+  - `event` - `string` - Triggers a client event `TriggerEvent(event, point)`
+  - `serverEvent` - `string` - Triggers a server event `TriggerServerEvent(serverEvent, point.id)`
   - `canInteract` - `function(point) -> boolean` - hides this option when it returns false
   - `control` - `number` - an extra key bind, used along with `Config.KeyControl`
   - `distance` - `number` - sets a different distance for just this option, instead of `Config.Distance`
   - `key` - `string` - shows a different key on the keycap for this option, instead of `Config.Key`
 - `data` - table (optional):
   - `distance` - `number` - how far away the point can be seen or used (default `Config.VisibleDistance`)
-  - `zOffset` - `number` - moves the drawn marker/prompt up or down
-  - `noDot` - `boolean` - set to `true` to skip the ambient dot and only show the prompt up close
+  - `zOffset` - `number` - moves the point up/down
+  - `noDot` - `boolean` - set to `true` to not show a dot and only show the prompt when close
   - `vehicleDot` - `boolean` - set to `true` to use the vehicle marker's icon and size, and track its position every frame
 
 ```lua
@@ -56,8 +56,7 @@ exports['v-interact']:RemovePoint(pointId)
 
 ### `UpdatePointCoords(id, coords)`
 
-Moves a point that already exists - useful for keeping it stuck to something
-that's moving, like an entity.
+Changes the position of an existing point
 
 ```lua
 exports['v-interact']:UpdatePointCoords(pointId, GetEntityCoords(someEntity))
@@ -65,7 +64,7 @@ exports['v-interact']:UpdatePointCoords(pointId, GetEntityCoords(someEntity))
 
 ### `AddPointOptions(id, options)`
 
-Adds more prompts to a point that's already there, without having to
+Adds more prompts to a point that already exists, without having to
 recreate it. `options` uses the same format as the `options` parameter in
 `AddPoint`.
 
@@ -77,8 +76,7 @@ exports['v-interact']:AddPointOptions(pointId, { trunkOption })
 ### `RemovePointOption(id, option)`
 
 Removes one prompt from a point. `option` has to be the same table you
-passed into `AddPoint` or `AddPointOptions`, so keep a reference to it if
-you might need to remove it later.
+passed into `AddPoint` or `AddPointOptions`.
 
 ```lua
 exports['v-interact']:RemovePointOption(pointId, trunkOption)
@@ -86,9 +84,7 @@ exports['v-interact']:RemovePointOption(pointId, trunkOption)
 
 ### `ClearPointOptions(id)`
 
-Removes all prompts from a point at once. This gives you a clean slate to
-rebuild a fully dynamic option list, instead of calling `RemovePointOption`
-for each one.
+Removes all prompts within a point.
 
 ```lua
 exports['v-interact']:ClearPointOptions(pointId)
@@ -97,7 +93,7 @@ exports['v-interact']:AddPointOptions(pointId, { newOption })
 
 ### `GetPointCoords(id) -> vector3 or nil`
 
-Gives you a point's current position, or `nil` if that id doesn't exist.
+Gives you the coords of a points current position
 
 ```lua
 local coords = exports['v-interact']:GetPointCoords(pointId)
@@ -106,8 +102,8 @@ if coords then print(coords.x, coords.y, coords.z) end
 
 ### `SetPointDistance(id, distance)`
 
-Changes how far away a point can be seen or used, after it's already been
-created. No need to remove and re-add the point.
+Changes the distance a point can be seen or used, after it's already been
+created.
 
 ```lua
 exports['v-interact']:SetPointDistance(pointId, 4.0)
@@ -115,9 +111,7 @@ exports['v-interact']:SetPointDistance(pointId, 4.0)
 
 ### `GetActivePointId() -> id or nil`
 
-Returns the id of whatever point currently has the prompt focused, or `nil`
-if none does. This lets another resource react to what the player is
-looking at.
+Returns the id of whatever point the player is looking at
 
 ```lua
 local activeId = exports['v-interact']:GetActivePointId()
@@ -126,8 +120,7 @@ if activeId == myStashPointId then print('player is looking at the stash') end
 
 ### `HidePoint(id)`
 
-Hides a point for now. Its coords and options stay registered under the
-same id, but it won't show up as ambient or active while hidden.
+Hides an existing point.
 
 ```lua
 exports['v-interact']:HidePoint(pointId)
@@ -135,7 +128,7 @@ exports['v-interact']:HidePoint(pointId)
 
 ### `ShowPoint(id)`
 
-Reverses `HidePoint`.
+Shows an existing point that is hidden
 
 ```lua
 exports['v-interact']:ShowPoint(pointId)
@@ -143,7 +136,7 @@ exports['v-interact']:ShowPoint(pointId)
 
 ### `HideAllPoints()`
 
-Hides every currently registered point at once.
+Hides all points at once.
 
 ```lua
 exports['v-interact']:HideAllPoints()
