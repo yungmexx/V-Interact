@@ -1,12 +1,11 @@
-# v-interact
+# V-Interact
 
 <img width="641" height="377" alt="{2E34A92F-7C93-45C4-96A7-C202182339FD}" src="https://github.com/user-attachments/assets/56457592-e4cb-4247-8928-c2646fd69b70" />
 
-Proximity interaction points for FiveM. Each point starts as a small dot in
+3d interaction points for FiveM. Each point starts as a small dot in
 the world. When the player gets close and looks at it, the dot turns into a prompt. If a point has more than one option, the
 player can scroll the mouse wheel to switch between them. Everything is
-drawn natively (`DrawSprite`/`SetDrawOrigin`), so the prompt stays locked to
-its spot in the world with no lag, even when the camera moves fast.
+drawn natively (`DrawSprite`/`SetDrawOrigin`)
 
 It also includes `vehicle_doors.lua`, which automatically adds a point on
 all the doors, hoods, and trunk of any nearby vehicle. These points
