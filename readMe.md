@@ -1,3 +1,5 @@
+
+
 # V-Interact
 
 <img width="641" height="377" alt="{2E34A92F-7C93-45C4-96A7-C202182339FD}" src="https://github.com/user-attachments/assets/56457592-e4cb-4247-8928-c2646fd69b70" />
@@ -9,6 +11,8 @@ drawn natively (`DrawSprite`/`SetDrawOrigin`)
 
 It also includes `vehicle_doors.lua`, which automatically adds a point on
 all the doors, hoods, and trunk of any nearby vehicle.
+
+https://r2.fivemanage.com/zl1azbSOnYlIdUyfImSJ8/MedalTVGrandTheftAutoVFiveM20260921175116951-trim-1790038701464.mp4
 
 ## Installation
 
